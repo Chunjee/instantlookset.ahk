@@ -73,6 +73,14 @@ assert.test(table.allData(), ["socrates", "ted"])
 assert.test(table.index, 2)
 
 
+; test that index stays at 1 when multiple same values added
+assert.label("create - index stays at 1 when multiple same values added")
+table.clear()
+table.create("ted", "ted", "ted")
+assert.test(table.index, 1)
+assert.test(table.create("ted", ["ted", "ted"], "Ted"), 1)
+
+
 
 ;; Display test results in GUI
 assert.fullReport()
