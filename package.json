@@ -27,6 +27,8 @@
 		"autohotkey",
 		"ahk",
 		"array",
-		"instant"
+		"instant",
+		"lookup",
+		"set"
 	]
 }
