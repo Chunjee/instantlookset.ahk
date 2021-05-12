@@ -1,5 +1,7 @@
 # instantlookupset.ahk
+
 ===========
+
 A package for instant lookup style arrays.
 
 
@@ -17,10 +19,10 @@ table := new instantlookupset()
 
 table.push("leo", "donny", "raph")
 table.read("raph")
-; => true
+; => 3
 
 table.find("raph")
-; => 3
+; => true
 ```
 You may also review or copy the library from [./export.ahk on GitHub](https://github.com/Chunjee/instantlookupset.ahk); #Include as you would normally when manually downloading.
 
