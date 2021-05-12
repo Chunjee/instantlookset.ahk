@@ -8,7 +8,7 @@ class instantlookupset {
 
 
 	; --- Static Methods ---
-	
+
 	; create
 	create(param_values*) {
 		savedBatchLines := A_BatchLines
@@ -49,7 +49,7 @@ class instantlookupset {
 		if (this.data[param_value] != "") {
 			return this.data[param_value]
 		}
-		return ""
+		return false
 	}
 
 	find(param_value) {
@@ -76,13 +76,13 @@ class instantlookupset {
 		}
 		return l_array
 	}
-	
+
 	; update
 	update(param_key, param_value:="") {
 		if (!IsObject(this.data)) {
 			this.clear()
 		}
-		
+
 		; prepare
 		if (param_value == "") {
 			this.index++
