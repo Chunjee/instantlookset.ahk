@@ -1,3 +1,5 @@
+<img alt="instantlookupset.ahk logo" src="./logo.svg">
+
 # instantlookupset.ahk
 
 ===========
